@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col pb-2">
+    <button class="btn btn-primary" routerLink="/agregarPaciente" >Agregar Paciente</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Direccion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let paciente of pacientes">
+          <th scope="row">{{paciente.id}}</th>
+          <td>{{paciente.nombre}}</td>
+          <td>{{paciente.edad}}</td>
+          <td>{{paciente.telefono}}</td>
+          <td>{{paciente.direccion}}</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+
+</div>

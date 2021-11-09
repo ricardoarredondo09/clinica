@@ -1,0 +1,31 @@
+
+<div class="d-flex justify-content-center">
+    <div class="card"  style="width: 40rem;">
+        <div class="card-header">
+            Registrar Paciente
+        </div>
+        <div class="card-body">
+            <form class="row" (submit)="agregarPaciente()">
+                    <div class="col-6 mb-3">
+                        <label for="" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" [(ngModel)]="paciente.nombre" name="nombre" placeholder="Ingrese Nombre"  id="">
+                    </div>
+                    <div class="col-6">
+                        <label for="" class="form-label">Edad</label>
+                        <input type="number" class="form-control" [(ngModel)]="paciente.edad" name="edad" placeholder="Ingrese Edad"  id="">
+                    </div>
+                    <div class="col-6">
+                        <label for="" class="form-label">Telefono</label>
+                        <input type="number" class="form-control" [(ngModel)]="paciente.telefono" name="telefono" placeholder="Ingrese Telefono" id="">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" [(ngModel)]="paciente.direccion" name="direccion" placeholder="Ingrese Direccion"  id="">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary"> Agregar Paciente</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
